@@ -18,13 +18,6 @@
           "sodium-hub/reset-hwid"
         ]
       },
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
     ]
   },
   "logo": {
