@@ -17,7 +17,7 @@
           "sodium-hub/get-scripts",
           "sodium-hub/reset-hwid"
         ]
-      },
+      }
     ]
   },
   "logo": {
@@ -30,7 +30,12 @@
         "label": "Support",
         "href": "https://discord.gg/XKVsxnHHWN"
       }
-    ]
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://discord.gg/XKVsxnHHWN"
+    }
   },
   "contextual": {
     "options": [
