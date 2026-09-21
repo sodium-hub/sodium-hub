@@ -1,0 +1,30 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Sodium Hub Docs",
+  "logo": {
+    "dark": "/sodium-hub/image/Logo_Sodium.png",
+    "light": "/sodium-hub/image/Logo_Sodium.png"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#3B82F6",
+    "light": "#60A5FA",
+    "dark": "#1D4ED8"
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "https://discord.gg/XKVsxnHHWN"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Sodium Hub",
+      "pages": [
+        "sodium-hub/redeem-key",
+        "sodium-hub/get-scripts",
+        "sodium-hub/reset-hwid"
+      ]
+    }
+  ]
+}

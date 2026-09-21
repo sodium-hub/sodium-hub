@@ -1,0 +1,71 @@
+---
+title: 'วิธี Get Scripts'
+description: 'ขั้นตอนการรับและคัดลอกโค้ดสคริปต์ผ่านระบบ Bot ใน Discord ไปใช้งาน'
+icon: 'newspaper'
+---
+
+<Info>
+  **เงื่อนไขก่อนเริ่ม:** คุณต้องทำการ [Redeem Key](/sodium-hub/redeem-key) ให้เรียบร้อยก่อน จึงจะมีสิทธิ์กดรับสคริปต์จากระบบบอต
+</Info>
+
+---
+
+## ขั้นตอนการรับโค้ดสคริปต์ (Get Script)
+
+<Steps>
+  <Step title="ไปยังห้อง #•-🔧-script">
+    เปิด Discord แล้วเข้าไปที่ห้องเดิมที่ใช้จัดการคำสั่งบอต เช่น **#•-🔧-script**
+
+    <Frame caption="ตำแหน่งห้อง Script สำหรับกดใช้งานบอต">
+      <img src="/sodium-hub/image/ChannelScript.png" alt="Discord Bot Channel" />
+    </Frame>
+  </Step>
+
+  <Step title="กดปุ่ม Get Script บนแผงควบคุม">
+    มองหาปุ่ม **Get Script** (ในหมวด Features บน Bot Panel) แล้วคลิกหนึ่งครั้ง
+
+    <Frame caption="หน้าต่างแผงควบคุมของบอต ให้เลือกกดที่ปุ่ม Get Script">
+      <img src="/sodium-hub/image/Botpanel.png" alt="Bot Panel Get Script" />
+    </Frame>
+
+    <Tip>
+      ระบบจะส่งโค้ดสคริปต์กลับมาแบบมองเห็นได้เฉพาะคุณเท่านั้น (Only you can see this)
+    </Tip>
+  </Step>
+
+  <Step title="คัดลอกโค้ดสคริปต์ (Loader)">
+    เมื่อบอตส่งโค้ดกลับมา ให้กดคัดลอก (Copy) โค้ดทั้งหมดที่ปรากฏ
+
+    ```lua
+    -- ตัวอย่างรูปแบบสคริปต์ที่จะได้รับ
+    getgenv().SCRIPT_KEY = "KEY_HERE"
+loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/e219a01c80d71507bc5670e982741569ab9bcae36de5005f7cdc8a357ecce378/download"))() 
+    ```
+
+    <Warning>
+      **ข้อควรระวัง:** ห้ามนำโค้ดหรือลิงก์สคริปต์ของคุณไปแจกจ่ายให้ผู้อื่นเด็ดขาด หากระบบตรวจพบการแชร์โค้ดอาจถูกระงับสิทธิ์การใช้งาน
+    </Warning>
+  </Step>
+
+  <Step title="นำไปรันในโปรแกรม (Executor)">
+    เปิดโปรแกรมรันสคริปต์ที่คุณใช้งาน นำโค้ดที่คัดลอกมาวางลงในช่องรันโค้ด จากนั้นกด **Execute** เพื่อเริ่มใช้งานในเกมได้ทันที
+  </Step>
+</Steps>
+
+---
+
+## ปัญหาที่พบบ่อย (FAQ)
+
+<AccordionGroup>
+  <Accordion title="กดปุ่มแล้วบอตแจ้งว่ายังไม่ได้เปิดใช้งานคีย์ (No Active License)">
+    ตรวจสอบให้แน่ใจว่าได้ทำตามขั้นตอนในหน้า [วิธี Redeem Key](/sodium-hub/redeem-key) สำเร็จแล้ว หากเพิ่ง Redeem ไปให้ลองรอ 1–2 นาทีแล้วกดใหม่อีกครั้ง
+  </Accordion>
+
+  <Accordion title="กดปุ่มแล้วขึ้นข้อความ Interaction Failed">
+    ปัญหานี้มักเกิดจากบอต Discord ตอบสนองไม่ทันหรือกำลังรีสตาร์ต ให้ลองกดใหม่อีกครั้งใน 10–20 วินาทีถัดไป
+  </Accordion>
+
+  <Accordion title="ยังพบปัญหาการใช้งาน หรือต้องการความช่วยเหลือเพิ่มเติม">
+    ให้ทำการกดเปิด Ticket เพื่อติดต่อสอบถามทีมงานแอดมินในห้อง **•-🎟️-ticket**
+  </Accordion>
+</AccordionGroup>
